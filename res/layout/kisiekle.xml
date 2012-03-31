@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etAdSoyad"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Kişi Adı:" />
+
+    <EditText
+        android:id="@+id/etAdSoyad"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:gravity="center"
+        android:hint="Ad Soyad"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etTelefon"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/etTelefon"
+        android:text="Telefon:" />
+
+    <EditText
+        android:id="@+id/etTelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAdSoyad"
+        android:layout_alignRight="@+id/etAdSoyad"
+        android:layout_below="@+id/etAdSoyad"
+        android:hint="Telefon"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etTelefon"
+        android:layout_toLeftOf="@+id/etEmail"
+        android:text="E-mail:" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etTelefon"
+        android:layout_alignRight="@+id/etTelefon"
+        android:layout_alignTop="@+id/textView3"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etEmail"
+        android:text="İş yeri:" />
+
+    <EditText
+        android:id="@+id/etIsyeri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignRight="@+id/etEmail"
+        android:hint="İşyeri"
+        android:layout_below="@+id/etEmail" />
+
+    <Button
+        android:id="@+id/btnKisiEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etIsyeri"
+        android:layout_below="@+id/etIsyeri"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="37dp"
+        android:text="Kişi Ekle" />
+
+</RelativeLayout>
